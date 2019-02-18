@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controler-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewControler" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7la-TP-sze" customClass="TetrisView" customModule="Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaU-Rm-flz" customClass="SignUpView" customModule="Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKe-6S-Ipy" customClass="ProfilView" customModule="Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Rd-2w-nza" customClass="SignInView" customModule="Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Rd-2w-nza" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1tG-SO-oh0"/>
+                            <constraint firstItem="OKe-6S-Ipy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3af-EZ-WsN"/>
+                            <constraint firstItem="5Rd-2w-nza" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7jh-1X-QMy"/>
+                            <constraint firstItem="qaU-Rm-flz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9GD-Cs-mcU"/>
+                            <constraint firstItem="7la-TP-sze" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BUM-o3-Imx"/>
+                            <constraint firstItem="5Rd-2w-nza" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DU8-a1-xam"/>
+                            <constraint firstItem="qaU-Rm-flz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F0v-j0-e17"/>
+                            <constraint firstItem="7la-TP-sze" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ikq-Wk-7ir"/>
+                            <constraint firstItem="OKe-6S-Ipy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LRA-kW-wrY"/>
+                            <constraint firstItem="qaU-Rm-flz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QMX-6z-ybM"/>
+                            <constraint firstItem="OKe-6S-Ipy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TOQ-cg-Ay8"/>
+                            <constraint firstItem="7la-TP-sze" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ttt-XL-5zD"/>
+                            <constraint firstItem="qaU-Rm-flz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mS2-tp-bKr"/>
+                            <constraint firstItem="5Rd-2w-nza" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mT9-if-pEN"/>
+                            <constraint firstItem="OKe-6S-Ipy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="t0E-du-nmf"/>
+                            <constraint firstItem="7la-TP-sze" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ybm-Kj-D1p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="profilView" destination="OKe-6S-Ipy" id="Sil-mC-8me"/>
+                        <outlet property="signInView" destination="5Rd-2w-nza" id="EcT-Qd-hsT"/>
+                        <outlet property="signUpView" destination="qaU-Rm-flz" id="bAQ-yG-lcM"/>
+                        <outlet property="tetrisView" destination="7la-TP-sze" id="WTp-wz-kOk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="53.523238380809602"/>
+        </scene>
+    </scenes>
+</document>
