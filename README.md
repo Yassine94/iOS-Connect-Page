@@ -7,6 +7,6 @@ Bonus :
   - Ajouter une validation de l'email et du password 
     - email verification d'un @
     - password caractere < 5 
-  - Un easter egg :D (surprise)
+  - Un easter egg  (surprise)
   
 
